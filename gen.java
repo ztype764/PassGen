@@ -5,7 +5,7 @@ static char[] pass(int len) {
 	 String caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
      String small = "abcdefghijklmnopqrstuvwxyz";
      String nums = "0123456789";
-     String syms = "!@#$%^&*_=+-/.?<>)";
+     String syms = "!@#$%^&*_=+-/.?<>(),;:|[]{}";
      String disk = caps + small +
              nums + syms;
      Random rs=new Random();
