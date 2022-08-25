@@ -1,5 +1,3 @@
-package ba;
-
 import java.util.Scanner;
 
 public class generatepass {

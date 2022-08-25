@@ -1,4 +1,3 @@
-package ba;
 import java.util.Random;
 public class gen {
 static char[] pass(int len) {
