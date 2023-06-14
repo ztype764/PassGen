@@ -5,12 +5,17 @@ static char[] pass(int len) {
      String small = "abcdefghijklmnopqrstuvwxyz";
      String nums = "0123456789";
      String syms = "!@#$%^&*_=+-/.?<>(),;:|[]{}";
-     String disk = caps + small +
-             nums + syms;
      Random rs=new Random();
      char[] pass=new char[len];
-     for(int i=0;i<len;i++) {
-    	 pass[i]=disk.charAt(rs.nextInt(disk.length()));
+     while(i<=len;) {
+ pass[i]=caps.charAt(rs.nextInt(caps.length()));
+i++;
+pass[i]=small.charAt(rs.nextInt(small.length()));
+i++;
+pass[i]=nums.charAt(rs.nextInt(nums.length()));
+i++;
+pass[i]=syms.charAt(rs.nextInt(syms.length()));
+i++;
      }
 return pass;
 }
