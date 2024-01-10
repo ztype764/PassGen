@@ -7,4 +7,4 @@ A simple Java password generator that ensures at least one special character and
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/ztype764/PassGen/t)https://github.com/ztype764/PassGen.git
