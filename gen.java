@@ -1,23 +1,17 @@
 import java.util.Random;
+
 public class gen {
-static char[] pass(int len) {
-	 String caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-     String small = "abcdefghijklmnopqrstuvwxyz";
-     String nums = "0123456789";
-     String syms = "!@#$%^&*_=+-/.?<>(),;:|[]{}";
-     Random rs=new Random();
-     char[] pass=new char[len];
-     while(i<=len;) {
- pass[i]=caps.charAt(rs.nextInt(caps.length()));
-i++;
-pass[i]=small.charAt(rs.nextInt(small.length()));
-i++;
-pass[i]=nums.charAt(rs.nextInt(nums.length()));
-i++;
-pass[i]=syms.charAt(rs.nextInt(syms.length()));
-i++;
+     static char[] pass(int len) {
+          String base = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*_=+-/.?<>(),;:|[]{}";
+          int len1 = base.length();
+          Random rs = new Random();
+          char[] pass = new char[len];
+          pass[0] = base.charAt(rs.nextInt(26) + 52);
+          pass[1] = base.charAt(rs.nextInt(10) + 62);
+          for (int i = 2; i < len; i++) {
+               pass[i] = base.charAt(rs.nextInt(len1));
+          }
+          return pass;
      }
-return pass;
 }
 
-}
